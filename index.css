@@ -1,0 +1,20 @@
+#metercandidato{
+    display: flex;
+    flex-direction:column;
+    width: 24em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#metercandidato * {
+    width:100%;
+    margin:10px 16px 5px 16px;
+}
+#botones{
+    display: flex;
+    flex-direction:column;
+    width: 24em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

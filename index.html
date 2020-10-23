@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>encuestadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id = "metercandidato">
+        <h1 id = "titulo">Lapsus Napoleon Franco</h1>
+        <h3 id = "subtitulo">Registre el candidato para la encuenta</h3>
+        <input id = "ids" type= "text" placeholder="ID">
+        <input id = "nombres" type= "text" placeholder="Nombre">
+        <button id = "btRegistrar">Registrar</button>
+        <h3 id = "subtitulo2">Vota por el candidato usando su ID</h3>
+        <input id = "idDos" type ="text" placeholder="ID">
+        <button id = "btVotar">Votar</button>
+        <br>
+        <br>
+    </div>
+
+    <div id = "botones">
+        <button id = "btCandidatos">Ver candidatos</button>
+        <button id = "btVotaciones">Ver votaciones</button>
+    </div>
+</body>
+
+</html>
+
+<script src="index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyB8TkVAqAGNcunm1ouWxBC2ybE1ADfAPtE",
+      authDomain: "sem10-b5a2c.firebaseapp.com",
+      databaseURL: "https://sem10-b5a2c.firebaseio.com",
+      projectId: "sem10-b5a2c",
+      storageBucket: "sem10-b5a2c.appspot.com",
+      messagingSenderId: "442442371277",
+      appId: "1:442442371277:web:2ca0387e9de09ab4c51984",
+      measurementId: "G-T71H1C9TTW"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
