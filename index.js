@@ -18,4 +18,13 @@ meter = () => {
     let v = btVotar.value;
     let bc = btCandidatos.value;
     let bv = btVotaciones.value;
+
+    let obUsuario = {
+        Nombre: n,
+        ID: d,
+    }
+    console.log(obUsuario);
+    database.ref('Candidatos').push().set(obUsuario);
 }
+btRegistrar.addEventListener('click',meter);
+
